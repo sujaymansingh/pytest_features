@@ -1,0 +1,4 @@
+[
+    {"nums": [1, 2], "expected_product": 2},
+    {"nums": [3, 4], "expected_product": 12}
+]
