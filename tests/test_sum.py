@@ -11,8 +11,3 @@ def numbers():
 @pytest.mark.sum
 def test_get_sum(numbers):
     assert calculator.get_sum(numbers) == 36
-
-
-@pytest.mark.product
-def test_get_product(numbers):
-    assert calculator.get_product(numbers) == 40320
