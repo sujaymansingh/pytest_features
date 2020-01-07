@@ -36,5 +36,6 @@ def pytest_generate_tests(metafunc):
         for item in raw_data:
             nums = item["nums"]
             expected_product = item["expected_product"]
-            arguments.append((nums, expected_product))
+            pytest_param = pytest.param(nums, expected_product, id=item["id"])
+            arguments.append(pytest_param)
         metafunc.parametrize("nums, expected_product", arguments)
