@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pytest_features"
+version = "0.1.0"
+description = ""
+authors = ["Sujay Mansingh <info@sujaymansingh.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pytest = "^5.3"
+ipython = "^7.11"
+black = "=19.10b0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
